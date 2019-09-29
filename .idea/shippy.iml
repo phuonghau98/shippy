@@ -7,5 +7,6 @@
     <content url="file://$MODULE_DIR$/consignment_service" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Bundled Protobuf Distribution" level="application" />
   </component>
 </module>
