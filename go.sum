@@ -7,8 +7,8 @@ github.com/golang/mock v1.1.1/go.mod h1:oTYuIxOrZwtPieC+H1uAHpcLFnEyAGVDL/k47Jfb
 github.com/golang/protobuf v1.3.2 h1:6nsPYzhq5kReh6QImI3k5qWzO4PEbvbIW2cwSfR/6xs=
 github.com/golang/protobuf v1.3.2/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/google/go-cmp v0.2.0/go.mod h1:oXzfMopK8JAjlY9xF4vHSVASa0yLyX7SntLO5aqRK0M=
-github.com/phuonghau98/shippy/consignment_service v0.0.0-20190929042141-7588f894f4d0 h1:pPfQKyav/ZKhFPwa6c6LRPuR/BaTtZOB9Q0GrfQpNSI=
-github.com/phuonghau98/shippy/consignment_service v0.0.0-20190929042141-7588f894f4d0/go.mod h1:91GM8YUrElSnOrOQ92tcLArdKkwLSwbUrRqE4/LQrW0=
+github.com/phuonghau98/shippy/consignment_service v0.0.0-20190929103307-8a7c9b6c594e h1:rPacYTyAMTQRHvtG0WDdUUggFnkOFkXJoxaaa+P4oi4=
+github.com/phuonghau98/shippy/consignment_service v0.0.0-20190929103307-8a7c9b6c594e/go.mod h1:aI2wJY8OqwlL4+dF43R9MmHpG9cQrCDaJ9bd6Yryk8c=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/lint v0.0.0-20190313153728-d0100b6bd8b3/go.mod h1:6SW0HCj/g11FgYtHlgUYUwCkIfeOF89ocIRzGO/8vkc=
 golang.org/x/net v0.0.0-20190311183353-d8887717615a h1:oWX7TPOiFAMXLq8o0ikBYfCJVlRHBcsciT5bXOrH628=
