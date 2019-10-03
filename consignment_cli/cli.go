@@ -25,31 +25,10 @@ func parseFile (path string) (*pb.Consignment, error) {
 }
 
 func main() {
-	//conn, err := grpc.Dial(address, grpc.WithInsecure())
-	//if err != nil {
-	//	log.Fatal("Cannot dial: %v", err)
-	//}
-	//defer conn.Close()
-	//client := pb.NewShippingServiceClient(conn)
 	srv := micro.NewService(micro.Name("shippy.consignment.cli"))
 	srv.Init()
 
 	client := pb.NewShippingServiceClient("shippy.service.consignment", srv.Client())
-	//file := defaultFilename
-	//if len(os.Args) > 1 {
-	//	file = os.Args[1]
-	//}
-
-	//consignment, err := parseFile(file)
-	//if err != nil {
-	//	log.Fatalf("Cannot parse the file: %v", err)
-	//}
-
-	//r, err := client.CreateConsignment(context.Background(), consignment)
-	//if err != nil {
-	//	log.Fatalf("Could not greet: %v", err)
-	//}
-	//log.Printf("Created: %t", r.Created)
 	getAll, err := client.GetConsignments(context.Background(), &pb.GetRequest{})
 	if err != nil {
 		log.Fatalf("Could not list consignments: %v", err)

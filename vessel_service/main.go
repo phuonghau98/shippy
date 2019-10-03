@@ -1,17 +1,24 @@
 package main
 
 import (
+	"context"
 	"github.com/micro/go-micro"
 	"log"
 	pb "shippy/vessel_service/proto/vessel"
 )
 
+const (
+	dbHost = "mongodb://localhost:27018"
+)
 
 func main () {
-	vessels := []*pb.Vessel{
-		{Id: "vessel001", Name: "Boaty McBoatface", MaxWeight: 200000, Capacity: 500},
+	client, err := CreateClient(dbHost)
+	if err != nil {
+		panic(err)
 	}
-	repo := &VesselRepository{vessels}
+	defer client.Disconnect(context.TODO())
+	vesselCollection := client.Database("shippy").Collection("vessels")
+	repo := &VesselRepository{vesselCollection}
 	srv := micro.NewService(micro.Name("shippy.service.vessel"))
 	srv.Init()
 	pb.RegisterVesselServiceHandler(srv.Server(), &Handler{repo})
